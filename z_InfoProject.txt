@@ -1,0 +1,11 @@
+MAPBOX AND MONGODB ACCEPTS LOCATION IN [LONGITUDE,LATITUDE] FORMAT
+
+mapbox
+    -display tour places
+Email 
+    -mailtrap(trap the mail for development purpose)
+    -sendgrid(to dend actual email)
+    -mailSac(to create email without signup)
+
+stripe
+    -Credit Card payment system

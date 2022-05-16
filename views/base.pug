@@ -1,0 +1,45 @@
+doctype html 
+html 
+    head      
+        block head   
+            meta(charset="UTF-8")
+            meta(name="viewport" content="width=device-width, initial-scale=1.0")
+            //- meta(http-equiv='Content-Security-Policy' content="script-src 'self' 'unsafe-eval' https://maps.googleapis.com 'unsafe-inline'; object-src 'self'")
+            //- meta(http-equiv='Content-Security-Policy' content="default-src 'self' data: gap: 'unsafe-eval' ws: ;style-src 'self' 'unsafe-inline';script-src https: *;media-src 'none'; font-src *;connect-src *;img-src 'self' data: content:;")
+            //- meta(http-equiv='Content-Security-Policy' content="default-src 'self' data: gap: https://js.stripe.com/v3/ 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src ;**script-src 'self' http://onlineerp.solution.quebec 'unsafe-inline' 'unsafe-eval';* ")
+
+            //- meta(http-equiv='Content-Security-Policy' content=" script-src 'self' https://js.stripe.com/v3/ 'unsafe-eval'; object-src 'self' https://js.stripe.com/v3/" )
+
+
+            script(src="https://js.stripe.com/v3")
+            
+            
+            
+            link(href="https://fonts.googleapis.com/css?family=Lato:300,300i,700" rel="stylesheet")
+            link(rel="stylesheet", href="/css/style.css")
+            link(rel="shortcut icon" type='image/png' href="img/favicon.png")
+            link(href="https://fonts.googleapis.com/css?family=Lato:300,300i,700" rel="stylesheet")
+            title Natours | #{title}
+
+
+    body 
+        // HEADER
+        include _header
+        // Content 
+        block content 
+            h1 This is Home page 
+
+        //FOOTER
+        include _footer
+
+
+        script(src="/js/bundle/bundle.js")  
+        script(src="/js/mapbox.js")  
+        
+
+
+//- <script src="https://js.stripe.com/v3/"></script>
+
+
+
+
